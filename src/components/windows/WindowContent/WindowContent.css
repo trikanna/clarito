@@ -1,0 +1,19 @@
+.WindowContent {
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex: 1;
+  background: #ffffff;
+}
+
+.WindowContent__gray {
+  background: #ececec;
+}
+
+.WindowContent__transparent {
+  background: transparent;
+}
+
+.WindowContent__spaced {
+  padding: 16px;
+}

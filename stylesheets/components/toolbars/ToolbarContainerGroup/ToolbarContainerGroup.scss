@@ -1,0 +1,104 @@
+@import "../../../variables/variables";
+@import "../../../components/windows/Window/base/mixins";
+
+.ToolbarContainerGroup {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-app-region: no-drag;
+
+  height: 24px;
+  margin-left:  8px;
+  margin-right: 8px;
+
+  &.pull-right {
+    margin-top: 7px;
+    margin-right: 9px;
+  }
+
+  .btn {
+    position: relative;
+    float: left;
+
+    // wider buttons
+    _padding-left:  11px;
+    _padding-right: 11px;
+    _min-width: 60px;
+
+
+    // Bring the "active" button to the front
+    &:focus,
+    &:active{
+      z-index: 2;
+    }
+
+    &.active {
+      z-index: 3;
+    }
+  }
+
+  .btn + .btn,
+  .btn + .btn-group,
+  .btn-group + .btn,
+  .btn-group + .btn-group {
+    margin-left: -1px;
+  }
+
+  > .btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  > .btn:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  > .btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+
+  .btn + .btn {
+    border-left: 1px solid $dark-border-color;
+  }
+
+  .btn + .btn.active {
+    border-left: 0;
+  }
+
+  // Selected state
+  .active {
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 300;
+    background-color: #6d6c6d;
+    background-image: none;
+
+    @include linear-gradient(rgb(113,113,113), rgb(103, 102, 103));
+  }
+
+  // Invert the icon in the active button
+  .active .icon {
+    color: #fff;
+  }
+}
+
+.___ToolbarContainerGroup > .btn {
+  margin-left: 4px;
+  margin-right: 4px;
+
+  position: relative;
+  float: left;
+
+  _background: linear-gradient(rgb(255,255,255), rgb(237,237,237));
+
+  border-top-color: rgb(216,215,217);
+  border-right-color: rgb(207,206,208);
+  border-bottom-color: rgb(180,180,180);
+  border-left-color: rgb(207,206,208);
+
+  /* Button Base: */
+  background-image: linear-gradient(-180deg, #FEFEFE 0%, #F1F1F1 100%);
+  _box-shadow: 0 0 0 0 rgba(0,0,0,0.10), 0 0 1px 0 rgba(0,0,0,0.20);
+  border-radius: 4px;
+}

@@ -1,0 +1,91 @@
+.ToolbarContainerGroup {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-app-region: no-drag;
+  height: 24px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.ToolbarContainerGroup.pull-right {
+  margin-top: 7px;
+  margin-right: 9px;
+}
+
+.ToolbarContainerGroup .btn {
+  position: relative;
+  float: left;
+  _padding-left: 11px;
+  _padding-right: 11px;
+  _min-width: 60px;
+}
+
+.ToolbarContainerGroup .btn:focus, .ToolbarContainerGroup .btn:active {
+  z-index: 2;
+}
+
+.ToolbarContainerGroup .btn.active {
+  z-index: 3;
+}
+
+.ToolbarContainerGroup .btn + .btn,
+.ToolbarContainerGroup .btn + .btn-group,
+.ToolbarContainerGroup .btn-group + .btn,
+.ToolbarContainerGroup .btn-group + .btn-group {
+  margin-left: -1px;
+}
+
+.ToolbarContainerGroup > .btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ToolbarContainerGroup > .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.ToolbarContainerGroup > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.ToolbarContainerGroup .btn + .btn {
+  border-left: 1px solid #c2c0c2;
+}
+
+.ToolbarContainerGroup .btn + .btn.active {
+  border-left: 0;
+}
+
+.ToolbarContainerGroup .active {
+  color: #fff;
+  border: 1px solid transparent;
+  font-weight: 300;
+  background-color: #6d6c6d;
+  background-image: none;
+  background-color: #717171;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #717171), color-stop(100%, #676667));
+  background-image: -webkit-linear-gradient(top, #717171 0%, #676667 100%);
+  background-image: linear-gradient(to bottom, #717171 0%, #676667 100%);
+}
+
+.ToolbarContainerGroup .active .icon {
+  color: #fff;
+}
+
+.___ToolbarContainerGroup > .btn {
+  margin-left: 4px;
+  margin-right: 4px;
+  position: relative;
+  float: left;
+  _background: linear-gradient(white, #ededed);
+  border-top-color: #d8d7d9;
+  border-right-color: #cfced0;
+  border-bottom-color: #b4b4b4;
+  border-left-color: #cfced0;
+  /* Button Base: */
+  background-image: linear-gradient(-180deg, #FEFEFE 0%, #F1F1F1 100%);
+  _box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}

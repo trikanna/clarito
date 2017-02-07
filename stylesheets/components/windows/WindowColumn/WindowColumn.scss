@@ -1,0 +1,33 @@
+@import "../../../variables/variables";
+
+.WindowColumn {
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+  border-left: 1px solid #ccc;
+
+  &__transparent {
+    background: red;
+  }
+
+  &__white {
+    background: $colorWhite;
+  }
+
+  &__gray {
+    background: $colorGray;
+  }
+
+  &__spaced {
+    padding: 16px;
+  }
+
+  &__sidebar {
+    max-width: 200px;
+  }
+
+  &:first-child {
+    border-left: 0;
+  }
+}
+

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-user-select: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea {
+  -webkit-user-select: text;
+}
+
+form,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-user-select: text;
+  -webkit-app-region: no-drag;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.text-center {
+  text-align: center;
+}

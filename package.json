@@ -1,0 +1,28 @@
+{
+  "name": "clarito",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron.js",
+  "devDependencies": {
+    "@kadira/storybook": "^2.35.2",
+    "@types/react": "^0.14.57",
+    "electron": "^1.4.13",
+    "node-sass": "^4.2.0",
+    "react-icons": "^2.2.3",
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start & npm run styles",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "electron": "electron .",
+    "styles": "node-sass -w --output-style=expanded stylesheets/ -o src/"
+  }
+}

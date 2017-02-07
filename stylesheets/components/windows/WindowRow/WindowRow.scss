@@ -1,0 +1,50 @@
+@import "../../../variables/variables";
+
+.WindowRow {
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  _background: pink;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.WindowColumn {
+  _background: yellow;
+  _align-items: center;
+  _justify-content: center;
+  _flex-wrap: wrap;
+  _height: auto;
+
+  display: flex;
+  flex-direction: column;
+  _justify-content: center;
+  _align-items: center;
+}
+.WindowColumn .WindowRow {
+  _color: blue;
+  _padding: 20px;
+  _background: green;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: inherit;
+  height: auto;
+  _border: 1px dashed blue;
+}
+.WindowColumn > .WindowRow .WindowColumn {
+  _background: orange;
+  _color: white;
+  _margin: 5px;
+  _height:auto;
+  display: flex;
+  flex: 1;
+}
+.WindowColumn > .WindowRow > * {
+  _color: purple;
+  display: block;
+}

@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+body {
+  line-height: 16px;
+}
+
+p {
+  margin: 0 0 16px 0;
+}

@@ -1,0 +1,21 @@
+@import "../../../variables/variables";
+
+.WindowContent {
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex: 1;
+  background: $colorWhite;
+
+  &__gray {
+    background: $colorGray;
+  }
+
+  &__transparent {
+    background: transparent;
+  }
+
+  &__spaced {
+    padding: 16px;
+  }
+}
