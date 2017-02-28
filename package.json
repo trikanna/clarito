@@ -4,13 +4,13 @@
   "private": true,
   "main": "electron.js",
   "devDependencies": {
-    "@kadira/storybook": "^2.35.2",
-    "@types/react": "^0.14.57",
-    "electron": "^1.4.13",
+    "@kadira/storybook": "^2.35.3",
+    "@types/react": "^15.0.13",
+    "electron": "^1.6.0",
     "netlify": "^1.2.0",
-    "node-sass": "^4.2.0",
+    "node-sass": "^4.5.0",
     "react-icons": "^2.2.3",
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.9.2"
   },
   "dependencies": {
     "react": "^15.4.2",
