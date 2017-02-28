@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 
+var platform = require('platform');
 
 import {
   IoIosFolder,
-  IoPersonAdd,
   IoIosArrowRight,
   IoIosArrowLeft,
-  IoIosLocation,
   IoAndroidAdd,
   IoIosCloud,
   IoDocument,
@@ -19,7 +18,9 @@ import {
   FaHddO,
   FaTag,FaTags
 } from 'react-icons/lib/fa';
-import {MdFolder} from 'react-icons/lib/md';
+
+//import { MdFolder } from 'react-icons/lib/md';
+
 
 
 import './window.css';
@@ -42,14 +43,15 @@ import {
 
 class App extends Component {
   render() {
+
     return (
       <Window>
 
-        <ToolbarHeader _title="Clarito" inset={true}>
+        <ToolbarHeader color={'gray'} _title="Clarito 3" inset={true}>
 
           <ToolbarContainer centered={false}>
 
-            <button className="btn btn-default btn-icon" style={{marginLeft: 78}}><IoIosFolder />Calendars</button>
+            <button className="btn btn-default btn-icon" style={{marginLeft: platform.name === 'Node.js' ? 78 : 8}}><IoIosFolder />Calendars</button>
 
             <button className="btn btn-default" style={{marginLeft: 40, marginRight: 30}}><IoAndroidAdd /></button>
 

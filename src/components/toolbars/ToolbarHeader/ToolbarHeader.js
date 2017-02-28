@@ -12,7 +12,7 @@ class ToolbarHeader extends Component {
 
   render() {
     return (
-      <header className="Toolbar ToolbarHeader clearfix">
+      <header className={"Toolbar ToolbarHeader clearfix ToolbarHeader__" + this.props.color}>
         {this.renderTitle()}
         {this.props.children}
       </header>
@@ -22,7 +22,12 @@ class ToolbarHeader extends Component {
 
 ToolbarHeader.propTypes = {
   title: React.PropTypes.string,
-  inset: React.PropTypes.bool
+  inset: React.PropTypes.bool,
+  color: React.PropTypes.string
+};
+
+ToolbarHeader.defaultProps = {
+  color: 'gray'
 };
 
 export default ToolbarHeader;
