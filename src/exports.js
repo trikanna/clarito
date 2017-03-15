@@ -17,7 +17,7 @@ import {
 
 } from './components';
 
-export default {
+export {
   Window,
 
   WindowContent,
