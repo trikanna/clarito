@@ -1,6 +1,6 @@
 {
   "name": "@trikanna/clarito",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "set of react components with mac os style",
   "homepage": "https://www.trikanna.com/",
   "keywords": [
@@ -57,6 +57,6 @@
     "electron": "electron .",
     "styles": "node-sass -w --output-style=expanded stylesheets/ -o src/",
     "deploy": "npm run build && netlify deploy",
-    "publish": "npm publish ---access public"
+    "publish": "npm publish --access=public"
   }
 }
