@@ -1,5 +1,5 @@
 import Window from './Window'
 
-require('./base/base.css');
+import './base/base.css';
 
 export default Window;
