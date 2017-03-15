@@ -1,6 +1,6 @@
 {
   "name": "@trikanna/clarito",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "set of react components with mac os style",
   "homepage": "https://www.trikanna.com/",
   "keywords": [
@@ -31,6 +31,7 @@
     "email": "trikanna@gmail.com",
     "url": "https://www.trikanna.com/"
   },
+  "license": "MIT",
   "main": "src/exports.js",
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
