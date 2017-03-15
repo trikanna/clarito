@@ -7,6 +7,7 @@ yarn.lock
 .idea
 .netlify
 build
-src/stories
-src/App.js
-src/index.js
+src
+lib/stories
+lib/App.js
+lib/index.js

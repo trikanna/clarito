@@ -1,20 +1,24 @@
-const Window = require('./components/windows/Window/');
+import {
+  Window,
 
-const WindowContent = require('./components/windows/WindowContent/');
-const WindowColumnGroup = require('./components/windows/WindowColumnGroup/');
-const WindowColumn = require('./components/windows/WindowColumn/');
+  WindowContent,
+  WindowColumnGroup,
+  WindowColumn,
 
-const WindowRow = require('./components/windows/WindowRow/');
+  WindowRow,
 
-const ToolbarHeader = require('./components/toolbars/ToolbarHeader/');
+  ToolbarHeader,
 
-const ToolbarContainer = require('./components/toolbars/ToolbarContainer/');
-const ToolbarContainerGroup = require('./components/toolbars/ToolbarContainerGroup/');
+  ToolbarContainer,
+  ToolbarContainerGroup,
 
-const ToolbarHorizontal = require('./components/toolbars/ToolbarHorizontal/');
-const ToolbarHorizontalItem = require('./components/toolbars/ToolbarHorizontalItem/');
+  ToolbarHorizontal,
+  ToolbarHorizontalItem
 
-module.exports = {
+} from './components';
+
+
+export {
   Window,
 
   WindowContent,
