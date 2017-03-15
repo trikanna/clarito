@@ -1,6 +1,6 @@
 {
   "name": "@trikanna/clarito",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "set of react components with mac os style",
   "homepage": "https://www.trikanna.com/",
   "keywords": [
@@ -16,7 +16,7 @@
     "ui"
   ],
   "engines": {
-    "node": ">=6"
+    "node": ">=7"
   },
   "repository": {
     "url": "https://github.com/trikanna/clarito.git",
