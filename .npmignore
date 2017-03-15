@@ -4,3 +4,9 @@ public
 stylesheets
 electron.js
 yarn.lock
+.idea
+.netlify
+build
+src/stories
+src/App.js
+src/index.js
