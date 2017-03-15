@@ -12,6 +12,7 @@ build
 # misc
 .DS_Store
 .env
+.netlify
 npm-debug.log
 
 .idea/

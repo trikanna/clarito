@@ -355,17 +355,6 @@ p {
   font-weight: 400;
 }
 
-.Toolbar {
-  min-height: 22px;
-  /*min-height: 68px;*/
-  box-shadow: inset 0 1px 0 #f2f1f2;
-  _background: linear-gradient(#e5e3e6, #c9c8c9);
-  __background: linear-gradient(#ecebed, #d6d5d7);
-  /*@include clearfix;*/
-  -webkit-app-region: drag;
-  /*-webkit-app-region: no-drag*/
-}
-
 .toolbar-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-app-region: drag;
@@ -609,3 +598,53 @@ p {
   top: 2px;
   left: 2px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.__ToolbarHeader__white .btn,
+.__ToolbarHeader__white .btn-default {
+  background-image: none;
+  background: white;
+}
+
+.__ToolbarHeader__transparent .btn,
+.__ToolbarHeader__transparent .btn-default {
+  background-image: none;
+}
+
+

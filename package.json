@@ -1,8 +1,37 @@
 {
-  "name": "clarito",
+  "name": "@trikanna/clarito",
   "version": "0.1.0",
-  "private": true,
-  "main": "electron.js",
+  "description": "set of react components with mac os style",
+  "homepage": "https://www.trikanna.com/",
+  "keywords": [
+    "trikanna",
+    "react",
+    "mac",
+    "macos",
+    "electron",
+    "browser",
+    "look",
+    "clean",
+    "minimal",
+    "ui"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "repository": {
+    "url": "https://github.com/trikanna/clarito.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/trikanna/clarito/issues",
+    "email": "trikanna@gmail.com"
+  },
+  "author": {
+    "name": "Santiago Camelo",
+    "email": "trikanna@gmail.com",
+    "url": "https://www.trikanna.com/"
+  },
+  "main": "src/exports.js",
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
     "@types/react": "^15.0.13",
@@ -26,6 +55,7 @@
     "build-storybook": "build-storybook -s public",
     "electron": "electron .",
     "styles": "node-sass -w --output-style=expanded stylesheets/ -o src/",
-    "deploy": "npm run build && netlify deploy"
+    "deploy": "npm run build && netlify deploy",
+    "publish": "npm publish --access=public"
   }
 }

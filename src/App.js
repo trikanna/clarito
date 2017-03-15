@@ -37,9 +37,12 @@ import {
   ToolbarHeader,
 
   ToolbarContainer,
-  ToolbarContainerGroup
+  ToolbarContainerGroup,
 
-} from './components/';
+  ToolbarHorizontal,
+  ToolbarHorizontalItem
+
+} from './components';
 
 class App extends Component {
   render() {
@@ -47,7 +50,7 @@ class App extends Component {
     return (
       <Window>
 
-        <ToolbarHeader color={'gray'} _title="Clarito 3" inset={true}>
+        <ToolbarHeader color={'gray'} _title="Clarito" inset={true}>
 
           <ToolbarContainer centered={false}>
 
@@ -118,7 +121,10 @@ class App extends Component {
 
             </WindowColumn>
 
-            <WindowColumn transparent={false} gray={false} white={true}>
+
+
+
+            <WindowColumn transparent={false} gray={true} white={false}>
 
               <WindowRow>
                 <h4><strong></strong></h4>
@@ -133,10 +139,16 @@ class App extends Component {
 
             </WindowColumn>
 
+
+
             <WindowColumn white>
 
               <WindowRow>
-                <h5></h5>
+                <ToolbarHorizontal>
+                  <ToolbarHorizontalItem type={'text'} label="General" active />
+                  <ToolbarHorizontalItem type={'text'} label="Capabilities" />
+                  <ToolbarHorizontalItem type={'text'} _label="Resources" />
+                </ToolbarHorizontal>
               </WindowRow>
 
               <WindowRow>
